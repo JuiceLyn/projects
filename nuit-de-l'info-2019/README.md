@@ -1,3 +1,4 @@
-# Nuit info 2k19
+# Nuit de l'info édition 2019
 
-yes c la nui de l1fau
+Compétition entre tous les IUT de France autour d'un thème sur l'avenir des étudiants. 
+Des défis proposés par des entreprises étaient à relever et des prix étaient à la clé.
