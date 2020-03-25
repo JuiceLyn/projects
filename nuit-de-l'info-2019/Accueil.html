@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="Julien ZHANG, Jaswinder SINGH, Papa Amadou DIEYE, Aimen-Allah FTAITI - GROUPE 205" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Le Carrefour Avenir</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/map.css">
+    <link id="classique" rel="stylesheet" type="text/css" href="css/Accueil.css" >
+    
+  </head>
+
+  <body>
+
+    <header class="logo box">
+      <div><a href="Accueil.html"> <img alt="logo" src="./images/logo.png"></a></div>
+      <div class="rechercher"> <input type="text" name="box" placeholder="premier : une balise" />
+        <div class="btn"> 
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+      <nav id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <ul class="overlay-content">
+          <li><a href="Accueil.html">Accueil</a></li>
+
+          <li><a href="javascript:void(0)">Inscription</a>
+          </li>
+
+          <li><a href="javascript:void(0)">Connexion</a>
+          </li>
+
+          <li><a href="javascript:void(0)">Contact</a>
+          </li>
+
+          <li><a href="secret.html">Secret</a>
+          </li>
+
+
+        </ul>
+      </nav>
+
+
+      <span class="openbtn" onclick="openNav()">&#9776;</span>
+
+      <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+      </script>
+    </header>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+          <li data-target="#carouselExampleFade" data-slide-to="0" class=""></li>
+          <li data-target="#carouselExampleFade" data-slide-to="1" class=""></li>
+          <li data-target="#carouselExampleFade" data-slide-to="2" class=""></li>
+          <li data-target="#carouselExampleFade" data-slide-to="3" class=""></li>
+          <li data-target="#carouselExampleFade" data-slide-to="4" class=""></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a  target="_blank" href="https://www.sorbonne.fr/toutes-les-bibliotheques/"><img class="d-block w-100" src="./images/med01.jpg" alt="Première photo"></a>
+            </div>
+
+            <div class="carousel-item">
+              <a  target="_blank" href="http://www.caf.fr/allocataires/actualites/2019/aide-au-logement-etudiant#le%20simulateur" ><img class="d-block w-100" src="./images/med02.jpg" alt="Deuxième photo"></a>
+            </div>
+
+            <div class="carousel-item">
+              <a target="_blank" href="https://www.jobaviz.fr/" ><img class="d-block w-100" src="./images/med03.jpg" alt="Troisième photo"></a>
+            </div>
+
+            <div class="carousel-item">
+              <a target="_blank" href="https://www.etudiant.gouv.fr/cid97554/ou-trouver-nos-restos.html" ><img class="d-block w-100" src="./images/med04.jpg" alt="Quatrième photo"></a>
+              
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous.</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="carte">
+      <h3 class="card-header">Carte des CROUS</h3>
+      <p id="secret">Mon second permet d'obtenir un caractère spécial par une combinaison.</p>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="250 100 300 125"xml:space="preserve">     
+      <g class="region region-11" data-nom="Île-de-France" data-code_insee="11">
+        <a href="http://www.crous-paris.fr/"><path data-nom="Paris" data-numerodepartement="75" class="region-11 departement departement-75 departement-paris" d="M396.8,154.7l-3.2-0.5l-2.5,1.7l3,3.5l5.3-0.1l-1.8-1.9L396.8,154.7z"></path></a>
+        <a href="http://www.crous-creteil.fr/"><path data-nom="Seine-et-Marne" data-numerodepartement="77" class="region-11 departement departement-77 departement-seine-et-marne" d="m441.1,176.1l-2.9,0.8l0.4,8.5l-15.4,3 l-0.2,5.8l-3.9,5.4l-11.2,2.7l-9.2-0.7l2.6-1.5l0.6-2.7l-4.2-4.3L397,190l3.4-4.8l4-17.2l-0.5-1l1.1-4.1l-0.3-2.9v-0.1l-1.3-4.7 l1.3-2.5l-1.7-5.1l0.1-0.1l1.7-2.3l-0.2-2l6.9,1l2-2.2l2.5,1.6l8.1-2.9l2.6,0.7l1.8,2.5l-0.7,2.8l3.9,4.2l9.3,6l-0.4,2l-2.6,2.2 l3.5,8.3l2.6,1.7L441.1,176.1z"></path></a>
+        <a href="http://www.crous-versailles.fr/"><path data-nom="Yvelines" data-numerodepartement="78" class="region-11 departement departement-78 departement-yvelines" d="m364.1,158.1l-3.6-6.6l-1.8-5.8l2.3-2.6 l3.8,0.1l9.5,0.8l9,3.6l5.5,6.1l-2,3.1l3.2,5.2l-7.1,5.4l-1.6,2.6l0.7,2.9l-4.6,8.6l-3.1,0.7L372,180l-1.2-5.6l-6.2-5.4L364.1,158.1z"></path></a>
+        <a href="http://www.crous-versailles.fr/"><path data-nom="Essonne" data-numerodepartement="91" class="region-11 departement departement-91 departement-essonne" d="m401.6,164.8l2.3,2.2l0.5,1l-4,17.2L397,190 l-3.7-0.6l-2.8,1.8l-1.5-2.7l-1.9,2.9l-6.9,0.7l-2.8-10.6l4.6-8.6l-0.7-2.9l1.6-2.6l7.1-5.4v-0.1l3.7,1.6l5.1,2.1L401.6,164.8z"></path></a>
+        <a href="http://www.crous-versailles.fr/"><path data-nom="Hauts-de-Seine" data-numerodepartement="92" class="region-11 departement departement-92 departement-hauts-de-seine" d="M391.1,155.9l3,3.5l-0.4,4.1l-3.7-1.6v0.1l-3.2-5.2l2-3.1l3.6-2.6l1.3,2l-0.1,1.1L391.1,155.9z"></path></a>
+        <a href="http://www.crous-creteil.fr/"><path data-nom="Seine-Saint-Denis" data-numerodepartement="93" class="region-11 departement departement-93 departement-seine-saint-denis" d="M404.7,152.7l-1.3,2.5l1.3,4.7v0.1l-7.1-2.6l-0.8-2.7l-3.2-0.5l0.1-1.1l-1.3-2l3.3-1.3l2.6,1.1 c1.6-1.1,3.2-2.2,4.7-3.3L404.7,152.7z"></path></a>
+        <a href="http://www.crous-creteil.fr/"><path data-nom="Val-de-Marne" data-numerodepartement="94" class="region-11 departement departement-94 departement-val-de-marne" d="M404.7,160l0.3,2.9l-1.1,4.1l-2.3-2.2l-2.8,0.8l-5.1-2.1l0.4-4.1l5.3-0.1l-1.8-1.9L404.7,160z"></path></a>
+        <a href="http://www.crous-versailles.fr/"><path data-nom="Val-d’Oise" data-numerodepartement="95" class="region-11 departement departement-95 departement-val-doise" d="m374.3,144l-9.5-0.8l4-9.5l1.6,3.2l5.6,1.1 l6.3-1.8l9.2,2.2l2.2-1.6l10.9,6.4l0.2,2l-1.7,2.3l-0.1,0.1c-1.5,1.1-3.1,2.2-4.7,3.3l-2.6-1.1l-3.3,1.3l-3.6,2.6l-5.5-6.1 L374.3,144z"></path></a>
+      </g>
+      </svg>
+      <p id="secret">Mon dernier termine un main et mon tout est le nom d'une entreprise</p>
+    </div>
+
+    <div class="rapide box">
+        <div class="card my-4 hidden">
+            <h3 class="card-header">Accès rapide</h3>
+            <div class="card-body">
+                <div class="icons">
+                    <div class="column">
+                      <a target="_blank" href="javascript:void(0)">
+                        <img class="nouveau" src="./images/icones/nouvel-arrivant.png" alt="Dessin d'une clé de serrure">
+                        <p>Nouvel arrivant</p>
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a target="_blank" href="javascript:void(0)">
+                        <img src="./images/icones/parents.png" alt="Dessin d'une famille, des parents avec un enfant">
+                        <p>Notre réseau</p>
+                      </a>
+                    </div>
+                    <div  class="column">
+                      <a target="_blank" href="https://www.sorbonne.fr/toutes-les-bibliotheques/">
+                        <img src="./images/icones/projets.png" alt="Dessin d'une mallette de travail">
+                        <p>Études</p>
+                      </a>
+                    </div>
+                    
+                    <div class="column">
+                      <a target="_blank" href="https://www.service-public.fr/particuliers/vosdroits/N20398">
+                        <img src="./images/icones/facture.png" alt="Dessin d'une feuille de papier">
+                        <p>Démarches Administratives</p>
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a target="_blank" href="https://www.jobaviz.fr/">
+                        <img src="./images/icones/job.png" alt="Dessin de deux personnes qui se serrent la main">
+                        <p>Offres d'emplois</p>
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a target="_blank" href="http://www.caf.fr/allocataires/actualites/2019/aide-au-logement-etudiant#le%20simulateur">
+                        <img src="./images/icones/nous-contacter.png" alt="Dessin d'une maison">
+                        <p>Offres de logements</p>
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a target="_blank" href="secret.html">
+                        <img src="./images/icones/travaux-route.png" alt="Dessin d'un cône de chantier">
+                        <p>Secret</p>
+                      </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="retour box">
+      <a id="backtotop" onclick="backtotop()" class="notVisible"><img src="./images/backtotop.png" alt="retour haut de page"></a>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          window.onscroll = function(ev) {
+            document.getElementById("backtotop").className = (window.pageYOffset > 100) ? "Visible" : "notVisible";
+          };
+        });
+      </script>
+
+      <script>
+      function backtotop() {
+        window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+      }
+      </script>
+    </div>
+
+  </body>
+</html>

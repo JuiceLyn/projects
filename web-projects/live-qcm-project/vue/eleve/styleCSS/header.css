@@ -1,0 +1,92 @@
+html {
+	background-color: #FEE140;
+	background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6 51%, #2BC0E4 100%);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+header {
+	width: 100%;
+}
+
+body {
+	margin-left: 0px !important;
+}
+
+header nav ul {
+	overflow: hidden;
+	list-style: none;
+	padding-left: 0px;
+}
+
+header nav ul li a {
+	
+	color: black;
+	padding: 20px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+header nav ul li a:hover {
+	background: rgba(87,70,70,0.7);
+	color: white;
+	text-decoration: none;
+}
+
+header nav {
+	background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
+	width: 100%;
+	top: 60px;
+	height: 100%;
+	display: none;
+	position: fixed;
+	z-index: 1000;
+}
+
+header nav ul li {
+	display: block;
+	float: none;
+	border-bottom: 1px solid black;
+}
+
+.menu {
+	display: block;
+	width: 100%;
+	color: white;
+	position: fixed;
+	text-align: right;
+}
+.menu .btn {
+	width: 100%;
+	position: fixed;
+	display: block;
+	padding: 20px;
+	top: 0;
+	background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%);
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+
+.ContenuePage {
+	margin: 150px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%);
+}
+
+.ContenuePage h3 {
+	background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
+}
+
+@media screen and (max-width: 640px) {
+	.ContenuePage {
+		margin-left: 0;
+		width: 100%;
+	}
+}

@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* https://www.pexels.com/photo/red-school-blur-factory-451/ school3*/
+/* https://www.needpix.com/photo/1145194/the-university-school-corridor-the-interior-of-the-kielce-polytechnic-university-which-buildings-architecture-building-and-construction school2 */
+/* https://www.needpix.com/photo/685277/school-corridor-architecture-free-pictures-free-photos-free-images-royalty-free school1 */
+
+* {
+	box-sizing: border-box;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 0.4fr 1.6fr;
+	grid-template-rows: 0.5fr 1.9fr 0.4fr;
+	grid-template-areas: "IMAGE MENU" "Options Contenu" "Plus Footer";
+	font-family: 'R';
+	background: url("images/school1.jpg") no-repeat;
+	background-size: cover;
+}
+
+@font-face {
+	font-family: 'R';
+	src: url('Roboto-Regular.ttf');
+}
+
+.IMAGE { 
+	grid-area: IMAGE; 
+	padding-top: 2vh;
+	text-align: center;
+	background: linear-gradient(#d2d2ec, #c2acc3);
+}
+
+figcaption {
+	font-weight: bold;
+	margin: 10px;
+}
+
+.MENU { 
+	grid-area: MENU;
+	position: relative;
+	background: linear-gradient(#d2d2ec, #c2acc3);
+}
+
+.MENU ul p a {
+	text-decoration: none;
+	color: black;
+}
+
+.MENU ul p a::after {
+	content : '';
+	display : none;
+}
+
+.MENU ul p a::before {
+	content : '';
+	display : block;
+	width : 0;
+	height : 2px;
+	background : #000000;
+	transition : width 300ms;
+}
+ 
+.MENU ul p a:hover::before {
+	width : 3.6%;
+}
+
+.Options { 
+	grid-area: Options;
+}
+
+.Contenu {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "Accueil" "Sous-contenu";
+	grid-area: Contenu;
+}
+
+.Accueil { 
+	grid-area: Accueil;
+	margin: 20px;
+	text-align: center;
+	animation: fadeUp 3s;
+}
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 50%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.Sous-contenu { 
+	grid-area: Sous-contenu;
+	border: 1px solid blue;
+	text-align: center;
+}
+
+.BureauVirtuel {
+	margin: 20px;
+}
+
+.BureauVirtuel a:hover {
+	color: red;
+}
+
+.Footer { 
+	grid-area: Footer;
+	border: 1px solid red;
+	text-align: center;
+	font-size: 1.5vh;
+	font-family: 'Poppins', sans-serif;
+	padding-top: 45px;
+}
+
+.Plus { 
+	grid-area: Plus; 
+	border: 1px solid pink;
+	
+}
+
+.Plus form input[type="submit"] {
+	margin: 40px 80px 40px 80px;
+	font-size: 12.5pt;
+}

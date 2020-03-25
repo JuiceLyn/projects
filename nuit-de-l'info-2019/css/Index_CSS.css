@@ -1,0 +1,113 @@
+/* Feuille de style CSS pour l'index */
+html
+{
+	
+	background-color : #103d82;
+	color : white;
+}
+
+.middle {
+	position: absolute;
+	bottom: 15vh;
+	right: 15vh;
+	transform: translate(-50%, -50%);
+}
+
+.chevron {
+	color : white;
+	position: fixed;
+	font-size: 5vh;
+	display: inline-block;
+	animation: loading 3s ease-in-out infinite; /* Transition du chevron qui se répète indéfiniment */
+}
+
+.row
+{
+	background-color : #103d82;
+}
+
+.chevss {
+	width: 22.5vh;
+	height: 7.5vh;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+@keyframes loading { /* Règle permettant de définir et contrôler des animations en CSS sans utiliser des transitions */
+	
+	0% {
+		margin-left: 0;
+		opacity: 0;
+		display: block;
+	}
+
+	50% {
+		margin-left: 50%;
+		opacity: 1;
+	}
+
+	100% {
+		margin-left: 100%;
+		opacity: 0;
+		display: none;
+	}
+  
+}
+
+a:focus, a:hover {
+	color: white !important;
+}
+
+a {
+	color: white !important;
+}
+
+.text {
+	font-weight : bold;
+	animation: fadein 2s;
+    color : white;
+    font-family: 'Poppins', sans-serif;
+	margin-top: 20vw !important;
+	font-size: 6vh;
+	display: inline-block;
+	min-width: 50px;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.text:after {
+	content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .75s ease, background-color .75s ease;
+	margin-top: 1vw;
+}
+
+.text:hover:after {
+    width: 90%;
+    background: white
+}
+
+.cpyr {
+	font-weight : bold;
+	margin-top: 40vh;
+	text-align: center;
+	font-size: 1.5vh;
+	color : white;
+	font-family: 'Poppins', sans-serif;
+}
+
+.col-md-12 {
+	text-align: center;
+}

@@ -1,0 +1,94 @@
+.map {
+    overflow: hidden;
+}
+
+.map__image {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    float:left;
+    width: 40%;
+}
+
+
+.map__image path {
+    fill: #103D82;
+    stroke: white;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+}
+
+.map__image.tourisme path {
+    fill: #d5872e;
+    stroke: #fff;
+    stroke-width: 2px;
+    transition: fill 0.3s;
+}
+
+.map__image .is-active path {
+    fill: #efefef;
+}
+
+.map__image a:hover {
+    cursor: pointer;
+}
+
+.map__list {
+    column-count: 2;
+    float:right;
+    width: 50%;
+	font-weight: 100;
+}
+
+.map__list ul  {
+    list-style-type:circle;
+}
+
+
+.map__list  a{
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+    
+}
+
+
+.map__list a.is-active {
+    color: #103D82;
+    font-weight: bold;
+}
+
+
+.map__list.tourisme a.is-active {
+    color: #d5872e;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  .map {
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+      }
+
+   .map__image {
+    width: 80%;
+   }
+
+
+   .map__list {
+    width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+ 
+   .map__list {
+     display: none;
+    }
+
+    .liste_deroulante {display:block; margin-right:auto; margin-left:auto;}
+}
+

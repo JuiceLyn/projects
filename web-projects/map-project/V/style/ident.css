@@ -1,0 +1,606 @@
+body {
+	background: linear-gradient(90deg, #013896, #ffffff, #cf142b);
+}
+
+/* ------------- */
+/* CSS du header */
+/* ------------- */
+
+nav {
+    background: linear-gradient(90deg, rgb(149, 148, 120) 0%, rgb(170, 189, 202) 0%, rgb(226, 235, 225) 47%, rgb(223, 195, 181) 79%);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	box-shadow: 0 -1px 6px rgba(0,0,0,1);
+}
+
+.navbar ul li a {
+    padding-top: 2px;
+    position: relative;
+}
+
+.navbar ul li a:hover {
+	color: unset !important;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateX(-50%) scaleX(0);
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    transition: transform 250ms, -webkit-transform 250ms;
+}
+
+.navbar ul li a:hover::after {
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+}
+
+.navbar ul li a::selection {
+	color: #3b8c47;
+}
+
+.logo img {
+	height: 105px;
+	width: 105px;
+}
+
+.nav-item {
+	margin: 20px;
+}
+
+.nav-link {
+    color: #212529;
+	padding: 0 !important;
+	cursor: context-menu;
+}
+
+/* ----------------- */
+/* Fin CSS du header */
+/* ----------------- */
+
+/* --- */
+
+.background p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.background h2 {
+	margin-bottom: 0;
+	color: #2f2f2fc9;
+}
+
+/* ------------------------------------------------------ */
+/* Animation avec les lettres en complément du javascript */
+/* ------------------------------------------------------ */
+
+.ml9 {
+	position: relative;
+	font-weight: 200;
+	font-size: 2em;
+	font-family: Arial, Helvetica, sans-serif !important;
+	text-align: center;
+}
+
+.ml9 .texte {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.ml9 .letter {
+	transform-origin: 50% 100%;
+	display: inline-block;
+	line-height: 1em;
+}
+
+.letter::selection {
+	color: #232af1cc;
+}
+
+/* --------------- */
+/* FIN CSS LETTRES */
+/* --------------- */
+
+/* --- */
+
+/* ----------------- */
+/* CSS du formulaire */
+/* ----------------- */
+
+.login-container {
+    margin-top: 7vh;
+    margin-bottom: 12vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-container form {
+    padding: 2% 10% 0% 10%;
+}
+
+.login-form {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+	z-index: 2;
+	background: linear-gradient(90deg, rgb(204, 204, 196) 0%, rgb(200, 218, 225) 0%, rgb(224, 227, 210) 50%, rgb(195, 214, 221) 100%);
+	border-radius: 5px;
+}
+
+.login-form h4, .login-form h5 {
+	color: #000000d1;
+	text-align: center;
+}
+
+.header-login-block {
+	text-align: center;
+}
+
+.header-login-block a {
+	text-decoration: none;
+	-webkit-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+	color: rgb(140,140,140);
+}
+
+.header-login-block hr {
+	width: 80%;
+	margin-top: 5px;
+	border: 0;
+	height: 2px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+}
+
+.header-login-block a.active{
+	color: rgb(59, 87, 158);
+}
+
+.line {
+	display: inline-flex;
+	padding-bottom: 15px;
+	font-weight: 500;
+}
+
+.space-1 {
+	margin-right: 50px;
+}
+
+.space-2 {
+	margin-left: 50px;
+}
+
+.txt {
+	margin-bottom: 30px;
+}
+
+h4::selection, h5::selection {
+	color: #fb0909db;
+}
+
+.form-group {
+	width: 100%;
+}
+
+.bouton {
+	text-align: center;
+}
+
+.btnSubmit {
+	width: 50%;
+	border-radius: 1rem;
+	padding: 1.5%;
+	border: none;
+	transition: 0.2s;
+	color: black;
+    background-color: white;
+}
+
+.btn-success:active {
+	background-color: #d2e5e3 !important;
+	color: #4c6159 !important;
+}
+
+.btn-success {
+	box-shadow: 0 0 0 0.2rem rgba(150, 179, 157, 0.5);
+}
+
+.btn-success:hover {
+	background-color: #cedddc !important;
+	color: black;
+}
+
+.btn-success:focus {
+	box-shadow: 0 0 0 0.2rem rgba(150, 179, 157, 0.5) !important;
+	background-color: #bbc9c8 !important;
+	color: black;
+}
+
+#block-lock {
+	display: none;
+	background-color: black;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: inherit;
+	height: 300px;
+}
+
+.loader {
+	display: none;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.loader div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	animation: loadcircle 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #fff transparent transparent transparent;
+}
+
+.loader div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+
+.loader div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+
+.loader div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+
+.echec {
+	text-align: center;
+}
+
+/* keyframe pour effectuer un effet de loading */
+@keyframes loadcircle {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+.input-log-in {
+	width: 100%;
+	position: relative;
+	border-bottom: 2px solid #adadad;
+	margin-bottom: 37px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.champ {
+	font-size: 15px;
+	color: #555555;
+	line-height: 1.2;
+	display: block;
+	width: 100%;
+	height: 45px;
+	background: transparent;
+	padding: 0 5px;
+}
+
+.active-input {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+
+.active-input::before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: all 0.4s;
+	background: #6a7dfe;
+	background: -webkit-linear-gradient(left, #013896, #ffffff, #cf142b);
+	background: linear-gradient(left, #013896, #ffffff, #cf142b);
+}
+
+.active-input::after {
+	font-size: 15px;
+	color: #999999;
+	line-height: 1.2;
+	content: attr(data-placeholder);
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 16px;
+	left: 0px;
+	padding-left: 5px;
+	transition: all 0.4s;
+}
+
+.champ:focus + .active-input::after {
+	top: -15px;
+}
+
+.champ:focus + .active-input::before {
+	width: 100%;
+}
+
+.filled.champ + .active-input::after {
+	top: -15px;
+}
+
+.filled.champ + .active-input::before {
+	width: 100%;
+}
+
+.show-password {
+	font-size: 15px;
+	color: #999999;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 0;
+	padding-right: 5px;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+/* --------------------- */
+/* FIN CSS DU FORMULAIRE */
+/* --------------------- */
+
+/* --- */
+
+/* ------------------------- */
+/* Animation avec des bulles */
+/* ------------------------- */
+
+@keyframes square { /* keyframe pour donner du dynamisme à des éléments */
+	0% {
+		-webkit-transform: translateY(0);
+        transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(-700px) rotate(600deg);
+        transform: translateY(-700px) rotate(600deg);
+	}
+}
+
+@-webkit-keyframes square {
+	0% {
+		-webkit-transform: translateY(0);
+        transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(-700px) rotate(600deg);
+        transform: translateY(-700px) rotate(600deg);
+	}
+}
+
+.bubbles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 45%;
+	z-index: -1;
+}
+
+.bubbles li {
+	position: absolute;
+	list-style: none;
+	display: block;
+	background-color: rgba(255, 255, 255, 0.15);
+	bottom: -200px;
+	-webkit-animation: square 25s infinite;
+	animation: square 25s infinite;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+	border-radius: 80px;
+}
+
+.bubbles li:nth-child(1) {
+	left: 10%;
+}
+
+.bubbles li:nth-child(2) {
+	left: 20%;
+	width: 80px;
+	height: 80px;
+	-webkit-animation-delay: 2s;
+    animation-delay: 2s;
+	-webkit-animation-duration: 17s;
+    animation-duration: 17s;
+}
+
+.bubbles li:nth-child(3) {
+	left: 25%;
+	-webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.bubbles li:nth-child(4) {
+	left: 40%;
+	width: 60px;
+	height: 60px;
+	-webkit-animation-duration: 22s;
+    animation-duration: 22s;
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.bubbles li:nth-child(5) {
+	left: 70%;
+}
+
+.bubbles li:nth-child(6) {
+	left: 65%;
+	width: 120px;
+	height: 120px;
+	-webkit-animation-delay: 3s;
+    animation-delay: 3s;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bubbles li:nth-child(7) {
+	left: 32%;
+	width: 160px;
+	height: 160px;
+	-webkit-animation-delay: 7s;
+    animation-delay: 7s;
+}
+
+.bubbles li:nth-child(8) {
+	left: 55%;
+	width: 20px;
+	height: 20px;
+	-webkit-animation-delay: 15s;
+    animation-delay: 15s;
+	-webkit-animation-duration: 40s;
+    animation-duration: 40s;
+}
+
+.bubbles li:nth-child(9) {
+	left: 25%;
+	width: 10px;
+	height: 10px;
+	-webkit-animation-delay: 2s;
+    animation-delay: 2s;
+	-webkit-animation-duration: 40s;
+    animation-duration: 40s;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bubbles li:nth-child(10) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	-webkit-animation-delay: 11s;
+    animation-delay: 11s;
+}
+
+/* -------------- */
+/* FIN CSS BULLES */
+/* -------------- */
+
+/* --- */
+
+/* --------------------- */
+/* Scollbar personalisée */
+/* --------------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+	background: -webkit-linear-gradient(90deg, #013896, #ffffff, #cf142b);
+	background: linear-gradient(90deg, #013896, #ffffff, #cf142b);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #48534b59; 
+}
+
+/* ----------------- */
+/* FIN CSS SCROLLBAR */
+/* ----------------- */
+
+/* --- */
+
+/* ------------------------ */
+/* CSS curseur personnalisé */
+/* ------------------------ */
+
+.cursor {
+	position: absolute;
+    width: 20px;
+    height: 20px;
+	z-index: 3;
+	border: 1px solid white;
+    animation: animated-cursor1 .5s infinite alternate;
+    pointer-events: none;
+    border-radius: 50%;
+}
+
+.cursor-clicked {
+    animation: animated-cursor2 .5s forwards;
+}
+
+@keyframes animated-cursor1 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes animated-cursor2 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* ----------------- */
+/* FIN CSS curseur */
+/* ----------------- */
+
+/* FIN CSS */
+/* ------- */
