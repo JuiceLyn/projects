@@ -1,3 +1,3 @@
-# Projets informatiques réalisés à l'IUT de Paris
+# Projets réalisés à l'IUT de Paris
 
 /!\ Non complet
